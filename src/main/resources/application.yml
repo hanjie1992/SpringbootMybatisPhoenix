@@ -3,7 +3,10 @@ spring:
     #zookeeper地址
     url: jdbc:phoenix:192.168.1.81:2181
     driver-class-name: org.apache.phoenix.jdbc.PhoenixDriver
-#    type: com.alibaba.druid.pool.DruidDataSource
+#    connectionProperties:
+#       phoenix:
+#        schema:
+#          isNamespaceMappingEnabled: true
 
 
     # 如果不想配置对数据库连接池做特殊配置的话,以下关于连接池的配置就不是必须的
